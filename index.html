@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Klasifikasi Naive Bayes Sederhana</title>
+</head>
+<body>
+    <header>
+        <h1>Klasifikasi Naive Bayes Sederhana</h1>
+        <p>Created by Amateur Coder </p>
+        <nav><a href="https://github.com/romeonaw"><span class="icon github"></span> Github</a></nav>
+    </header>
+    <main>
+        <div id="container">
+            <p>Isikan dataset Anda ke text area berikut. Baris pertama berisi label/header data. Baris berikutnya berisi data diikuti dengan kelompok/hasil klasifikasi yang sudah diketahui. Masing-masing data dipisahkan dengan koma. Tidak perlu memberi koma di akhir baris. Contoh format:</p>
+            <textarea id="data" rows="10" style="width: 100%;">
+OUTLOOK, TEMPERATURE, HUMADITY, WIND, PLAY TENNIS
+Sunny, Hot, High, Weak, No
+Sunny, Hot, High, Strong, No
+Overcast, Hot, High, Weak, Yes
+Rain, Mild, High, Weak, Yes
+Rain, Cool, Normal, Weak, Yes
+Rain, Cool, Normal, Strong, No
+Overcast, Cool, Normal, Strong, Yes
+Sunny, Mild, High, Weak, No
+Sunny, Cool, Normal, Weak, Yes
+Rain, Mild, Normal, Weak, Yes
+Sunny, Mild, Normal, Strong, Yes
+Overcast, Mild, High, Strong, Yes
+Overcast, Hot, Normal, Weak, Yes
+Rain, Mild, High, Strong, No
+</textarea>
+<br>
+<button id="button" onclick="processData()">Proses</button>
+<form id="prediction-box"></form>
+<script src="index.js"></script>
+<div id="result"></div>
+</div>
+</main>
+<footer>
+    <p>Romeonaw &copy; 2022</p>
+</footer>
+</body>
+</html>
